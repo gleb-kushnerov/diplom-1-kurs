@@ -8,11 +8,11 @@ header {
   background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(0, 0, 255, 0.7)),
               url("../img/bg-header2.jpg") no-repeat top center;
   background-size: cover;
-  //border-bottom-right-radius: 50%;
-  //border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 14em 3em;
+  border-bottom-left-radius: 14em 3em;
+
   display: flex;
   flex-direction: column;
-  //justify-content: flex-start;
   align-items: center;
 
     .header-top {
@@ -84,7 +84,8 @@ header {
   }
 
   button {
+    background-image: none;
+    color: #000;
     background-color: #fff;
-
   }
 }
