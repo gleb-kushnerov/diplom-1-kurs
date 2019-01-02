@@ -1,5 +1,5 @@
 @mixin orange-blue-gradient ($direction) {
-  background-image: linear-gradient($direction, rgb(255, 165, 0), rgb(0, 0, 255));
+  background: linear-gradient($direction, rgb(255, 165, 0), rgb(0, 0, 255));
 }
 
 @mixin border-black {

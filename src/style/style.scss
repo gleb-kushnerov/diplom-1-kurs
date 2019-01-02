@@ -2,6 +2,7 @@
 @import "mixins";
 @import "header";
 @import "facts";
+@import "media";
 
 
 
@@ -19,6 +20,7 @@ body {
   font-size: 18px;
   display: flex;
   flex-direction: column;
+  perspective: 500px;
 }
 
 :focus {
@@ -53,6 +55,18 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 50px;
+
+  &:hover {
+    animation: btn-hover 3s ease infinite ;
+    background-size: 400%;
+    background-position: 250% 0%;
+    box-shadow: 0 0 25px #000;
+    transition: transform 0.3s ease;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 @font-face {

@@ -1,13 +1,15 @@
 @import "mixins";
+@import "animations";
 
 .facts {
   box-sizing: border-box;
   //padding: 0 var(--main-padding);
   margin-top: -150px;
-  padding-bottom: 100px;
+  padding: 0 0 100px 25px;
   width: 100%;
   display: flex;
   justify-content: center;
+  transform-style: preserve-3d;
 
   .facts-item {
     box-sizing: border-box;
@@ -19,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 50px #b3b2ae;
+    transition: all 0.3s ease;
 
     .facts-item-overflow-container {
       width: 100%;
@@ -51,6 +54,10 @@
     button {
       margin-top: 20px;
       flex: 0 0 auto;
+    }
+
+    &:hover {
+      transform: translateZ(10px);
     }
   }
 
