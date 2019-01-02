@@ -1,0 +1,52 @@
+@keyframes btn-hover {
+  from {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 0%; }
+  to {
+    background-position: 0% 0%; } }
+
+.facts {
+  box-sizing: border-box;
+  margin-top: -150px;
+  padding: 0 0 100px 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d; }
+  .facts .facts-item {
+    box-sizing: border-box;
+    width: 300px;
+    height: 420px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 50px #b3b2ae;
+    transition: all 0.3s ease; }
+    .facts .facts-item .facts-item-overflow-container {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      flex: 0 0 auto; }
+      .facts .facts-item .facts-item-overflow-container img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: all 0.3s linear; }
+        .facts .facts-item .facts-item-overflow-container img:hover {
+          transform: scale(1.2); }
+    .facts .facts-item img {
+      width: 100%; }
+    .facts .facts-item p {
+      margin: 0 18px 18px 18px; }
+    .facts .facts-item button {
+      margin-top: 20px;
+      flex: 0 0 auto; }
+    .facts .facts-item:hover {
+      transform: translateZ(10px); }
+  .facts div + div {
+    margin-left: 25px; }

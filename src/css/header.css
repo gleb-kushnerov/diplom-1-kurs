@@ -1,0 +1,112 @@
+@media (max-width: 990px) {
+  .facts {
+    flex-wrap: wrap;
+    padding-left: 0; }
+    .facts .facts-item-last {
+      margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  header p {
+    max-width: 530px; }
+  header h1 {
+    font-size: 4em; } }
+
+@media (max-width: 690px) {
+  .facts {
+    flex-direction: column;
+    align-items: center; }
+    .facts .facts-item {
+      margin: 40px 0 0 0; }
+      .facts .facts-item:hover {
+        transform: none; } }
+
+@media (max-width: 547px) {
+  header .logo {
+    display: none; }
+  header nav {
+    width: 100%; }
+  header p {
+    width: 70%; } }
+
+@media (max-width: 520px) {
+  header h1 {
+    font-size: 3em; }
+  header h3 {
+    font-size: 1.5em; } }
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 2em; }
+  .facts .facts-item {
+    width: 100%;
+    border-radius: 0; }
+    .facts .facts-item .facts-item-overflow-container {
+      border-radius: 0; }
+      .facts .facts-item .facts-item-overflow-container img {
+        border-radius: 0; }
+    .facts .facts-item button {
+      margin-top: 0; } }
+
+header {
+  box-sizing: border-box;
+  height: 800px;
+  background-color: blue;
+  color: #fff;
+  background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(0, 0, 255, 0.7)), url("../img/bg-header2.jpg") no-repeat top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header .header-top {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto; }
+  header .logo {
+    font-size: 3.3em;
+    letter-spacing: -3px;
+    font-weight: bold; }
+    header .logo::after {
+      content: ".";
+      color: #fba419; }
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    header ul li + li {
+      margin-left: 20px; }
+    header ul a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative; }
+      header ul a::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: -10%;
+        right: 0%;
+        border-bottom: 1px solid #fff;
+        transform: scaleX(0);
+        transition: all 0.3s ease; }
+      header ul a:hover::after {
+        transform: scale(1); }
+      header ul a:hover {
+        opacity: 0.7; }
+  header h1 {
+    margin-bottom: 0; }
+  header p {
+    width: 750px;
+    opacity: 0.8; }
+  header button {
+    background-image: none;
+    background-color: #fff; }
+    header button a {
+      color: #000; }

@@ -3,6 +3,7 @@
 @import "header";
 @import "facts";
 @import "media";
+@import "about-us";
 
 
 
@@ -33,6 +34,7 @@ h1 {
 }
 
 h2 {
+  font-family: Bernadette;
   font-size: 2.8em;
 }
 
@@ -44,12 +46,16 @@ h4 {
   font-size: 1.4em;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 button {
   @include orange-blue-gradient(to right);
 
   box-sizing: border-box;
   padding: 10px 25px;
-  color: #fff;
+
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: bold;
@@ -67,9 +73,19 @@ button {
   &:active {
     transform: scale(0.9);
   }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 
 @font-face {
   font-family: Bernadette;
   src: url("../fonts/bernadette.ttf");
+}
+
+@font-face {
+  font-family: Berlin;
+  src: url("../fonts/BRLNSR.ttf");
 }
