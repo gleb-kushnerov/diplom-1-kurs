@@ -80,6 +80,14 @@ button {
   }
 }
 
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: 955px;
+  flex: 0 0 auto;
+}
+
 @font-face {
   font-family: Bernadette;
   src: url("../fonts/bernadette.ttf");
@@ -88,4 +96,9 @@ button {
 @font-face {
   font-family: Berlin;
   src: url("../fonts/BRLNSR.ttf");
+}
+
+@font-face {
+  font-family: Belgrad;
+  src: url("../fonts/Belgrad.ttf");
 }

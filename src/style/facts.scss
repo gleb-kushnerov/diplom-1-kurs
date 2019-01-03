@@ -3,9 +3,8 @@
 
 .facts {
   box-sizing: border-box;
-  //padding: 0 var(--main-padding);
+  padding: 0 0 100px 0;
   margin-top: -150px;
-  padding: 0 0 100px 25px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -52,7 +51,6 @@
     }
 
     button {
-      margin-top: 20px;
       flex: 0 0 auto;
     }
 
