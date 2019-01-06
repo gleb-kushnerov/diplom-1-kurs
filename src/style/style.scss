@@ -4,6 +4,7 @@
 @import "facts";
 @import "media";
 @import "about-us";
+@import "features";
 
 
 
@@ -29,12 +30,14 @@ body {
 }
 
 h1 {
-  font-family: Bernadette;
+  @include h1-h2-options;
+
   font-size: 6em;
 }
 
 h2 {
-  font-family: Bernadette;
+  @include h1-h2-options;
+
   font-size: 2.8em;
 }
 
@@ -63,10 +66,11 @@ button {
   border-radius: 50px;
 
   &:hover {
+    @include box-shadow-main-style;
+
     animation: btn-hover 3s ease infinite ;
     background-size: 400%;
     background-position: 250% 0%;
-    box-shadow: 0 0 25px #000;
     transition: transform 0.3s ease;
   }
 

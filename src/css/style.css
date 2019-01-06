@@ -154,11 +154,11 @@ header {
   justify-content: center;
   transform-style: preserve-3d; }
   .facts .facts-item {
+    border-radius: 10px;
     box-sizing: border-box;
     width: 300px;
     height: 420px;
     flex: 0 0 auto;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,6 +308,82 @@ header {
         font-weight: bold;
         font-family: Berlin; }
 
+.features {
+  padding-bottom: 100px; }
+  .features .container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 468px 468px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "1 2" "3 4";
+    grid-gap: 19px;
+    position: relative; }
+    .features .container .features-item {
+      border-radius: 10px;
+      padding: 0 10px;
+      z-index: 1;
+      transition: transform 0.3s ease;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      color: #fff; }
+      .features .container .features-item h4 {
+        margin-top: 60px; }
+      .features .container .features-item h4, .features .container .features-item p {
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .features .container .features-item .features-item-blur-container {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-size: cover; }
+      .features .container .features-item:hover .features-item-blur-container {
+        filter: blur(10px); }
+      .features .container .features-item:hover h4, .features .container .features-item:hover p {
+        opacity: 1; }
+    .features .container .features-item-1:hover {
+      transform: translateY(-100px); }
+    .features .container .features-item-1 .features-item-blur-container-1 {
+      background: url("../img/bg-features-1.jpg") no-repeat top center; }
+    .features .container .features-item-2:hover {
+      transform: translateY(-100px); }
+    .features .container .features-item-2 .features-item-blur-container-2 {
+      background: url("../img/bg-features-2.jpg") no-repeat top center; }
+    .features .container .features-item-3:hover {
+      transform: translateY(100px); }
+    .features .container .features-item-3 .features-item-blur-container-3 {
+      background: url("../img/bg-features-3.jpg") no-repeat top center; }
+    .features .container .features-item-4:hover {
+      transform: translateY(100px); }
+    .features .container .features-item-4 .features-item-blur-container-4 {
+      background: url("../img/bg-features-4.jpg") no-repeat top center; }
+    .features .container .features-item-main {
+      border-radius: 10px;
+      box-shadow: 0 0 25px #000;
+      padding: 0 10px;
+      position: absolute;
+      width: 60%;
+      height: 300px;
+      z-index: 2;
+      background-color: #fff;
+      left: 191px;
+      top: 169px;
+      text-align: center; }
+      .features .container .features-item-main h2 {
+        margin: 0;
+        font-weight: normal; }
+      .features .container .features-item-main p {
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 35px; }
+
 html {
   height: 100%;
   width: 100%; }
@@ -328,10 +404,12 @@ body {
 
 h1 {
   font-family: Bernadette;
+  font-weight: normal;
   font-size: 6em; }
 
 h2 {
   font-family: Bernadette;
+  font-weight: normal;
   font-size: 2.8em; }
 
 h3 {
@@ -353,10 +431,10 @@ button {
   border: none;
   border-radius: 50px; }
   button:hover {
+    box-shadow: 0 0 25px #000;
     animation: btn-hover 3s ease infinite;
     background-size: 400%;
     background-position: 250% 0%;
-    box-shadow: 0 0 25px #000;
     transition: transform 0.3s ease; }
   button:active {
     transform: scale(0.9); }
