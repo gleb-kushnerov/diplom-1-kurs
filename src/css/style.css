@@ -330,7 +330,7 @@ header {
       position: relative;
       color: #fff; }
       .features .container .features-item h4 {
-        margin-top: 60px; }
+        margin-top: 20px; }
       .features .container .features-item h4, .features .container .features-item p {
         z-index: 2;
         opacity: 0;
@@ -349,21 +349,26 @@ header {
       .features .container .features-item:hover h4, .features .container .features-item:hover p {
         opacity: 1; }
     .features .container .features-item-1:hover {
-      transform: translateY(-100px); }
+      transform: translateY(-50px); }
     .features .container .features-item-1 .features-item-blur-container-1 {
       background: url("../img/bg-features-1.jpg") no-repeat top center; }
     .features .container .features-item-2:hover {
-      transform: translateY(-100px); }
+      transform: translateY(-50px); }
     .features .container .features-item-2 .features-item-blur-container-2 {
       background: url("../img/bg-features-2.jpg") no-repeat top center; }
     .features .container .features-item-3:hover {
-      transform: translateY(100px); }
+      transform: translateY(50px); }
     .features .container .features-item-3 .features-item-blur-container-3 {
       background: url("../img/bg-features-3.jpg") no-repeat top center; }
+    .features .container .features-item-3 h4 {
+      margin-top: 120px; }
     .features .container .features-item-4:hover {
-      transform: translateY(100px); }
+      transform: translateY(50px); }
     .features .container .features-item-4 .features-item-blur-container-4 {
-      background: url("../img/bg-features-4.jpg") no-repeat top center; }
+      background: url("../img/bg-features-4.jpg") no-repeat top center;
+      background-size: cover; }
+    .features .container .features-item-4 h4 {
+      margin-top: 120px; }
     .features .container .features-item-main {
       border-radius: 10px;
       box-shadow: 0 0 25px #000;
@@ -383,6 +388,29 @@ header {
         font-style: italic;
         font-weight: bold;
         margin-bottom: 35px; }
+
+.services {
+  padding-bottom: 100px;
+  position: relative;
+  background: #f4f4f4; }
+  .services .container {
+    position: relative;
+    z-index: 1; }
+    .services .container .services-item {
+      width: 450px; }
+      .services .container .services-item span {
+        font-weight: bold; }
+      .services .container .services-item button {
+        margin-top: 50px; }
+  .services .services-right-bg-container {
+    width: 43%;
+    height: 100%;
+    background: url("../img/bg-services.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; }
 
 html {
   height: 100%;
@@ -434,7 +462,7 @@ button {
     box-shadow: 0 0 25px #000;
     animation: btn-hover 3s ease infinite;
     background-size: 400%;
-    background-position: 250% 0%;
+    background-position: 250% 0;
     transition: transform 0.3s ease; }
   button:active {
     transform: scale(0.9); }
