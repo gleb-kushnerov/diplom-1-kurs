@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   perspective: 500px;
+  cursor: default;
 }
 
 :focus {
@@ -65,6 +66,7 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 50px;
+  cursor: pointer;
 
   &:hover {
     @include box-shadow-main-style;
