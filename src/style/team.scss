@@ -1,7 +1,7 @@
 @import "mixins";
 
 .team {
-  margin-bottom: 100px;
+  margin-bottom: var(--main-bottom-padding);
   text-align: center;
   position: relative;
   z-index: 3;

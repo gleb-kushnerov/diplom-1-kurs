@@ -1,7 +1,7 @@
 @import "mixins";
 
 .features {
-  padding-bottom: 100px;
+  padding-bottom: var(--main-bottom-padding);
 
   .container {
     box-sizing: border-box;

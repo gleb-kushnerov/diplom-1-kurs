@@ -3,7 +3,7 @@
 
 .facts {
   box-sizing: border-box;
-  padding: 0 0 100px 0;
+  padding: 0 15px var(--main-bottom-padding) 15px;
   margin-top: -150px;
   width: 100%;
   display: flex;
@@ -22,6 +22,7 @@
     align-items: center;
     box-shadow: 0 0 50px #b3b2ae;
     transition: all 0.3s ease;
+    background-color: #fff;
 
     .facts-item-overflow-container {
       width: 100%;

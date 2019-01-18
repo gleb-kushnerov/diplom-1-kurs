@@ -7,6 +7,7 @@
 @import "features";
 @import "services";
 @import "team";
+@import "offer";
 
 
 
@@ -72,7 +73,7 @@ button {
   &:hover {
     @include box-shadow-main-style;
 
-    animation: btn-hover 3s ease infinite ;
+    animation: btn-hover 3s ease infinite;
     background-size: 400%;
     background-position: 250% 0;
     transition: transform 0.3s ease;
@@ -109,4 +110,9 @@ button {
 @font-face {
   font-family: Belgrad;
   src: url("../fonts/Belgrad.ttf");
+}
+
+@font-face {
+  font-family: Myriadpro;
+  src: url("../fonts/Myriadpro.ttf");
 }
