@@ -235,6 +235,12 @@ header {
   to {
     background-position: 0% 0%; } }
 
+@keyframes icon-rotate {
+  from {
+    transform: rotateX(0); }
+  to {
+    transform: rotateY(360deg); } }
+
 .facts {
   box-sizing: border-box;
   padding: 0 15px var(--main-bottom-padding) 15px;
@@ -706,10 +712,14 @@ header {
           background: url("../img/team-member-avatar-5.jpg") no-repeat 40%;
           background-size: cover; }
         .team .container .team-item .team-member-card h4 {
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          transition: text-shadow .3s ease; }
         .team .container .team-item .team-member-card p {
           margin: 0;
-          opacity: 0.7; }
+          opacity: 0.7;
+          transition: text-shadow .3s ease; }
+        .team .container .team-item .team-member-card h4:hover, .team .container .team-item .team-member-card p:hover {
+          text-shadow: 0 0 10px mediumpurple; }
   .team::after {
     content: "";
     width: 94%;
@@ -782,7 +792,7 @@ header {
           transition: all .3s ease; }
           .offer .container .offer-card .offer-item-2 li:hover {
             transform: scale(1.1);
-            opacity: 0.6; }
+            color: mediumpurple; }
           .offer .container .offer-card .offer-item-2 li::before {
             content: "✔";
             margin-right: 20px; }
@@ -798,6 +808,45 @@ header {
       flex: 0 0 auto; }
       .offer .container .offer-info .bold {
         font-weight: bold; }
+
+.social {
+  padding: var(--main-bottom-padding) 0 var(--main-bottom-padding) 0;
+  background: linear-gradient(to right, rgba(255, 165, 0, 0.8), rgba(0, 0, 255, 0.8)), url("../img/bg-social.jpg") no-repeat top center;
+  background-size: 100%;
+  color: #fff; }
+  .social .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1000px; }
+    .social .container h2 {
+      margin-top: 0; }
+    .social .container .social-item {
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .social .container .social-item a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        flex: 0 0 auto;
+        background: url("../img/sprite.png");
+        transform-style: preserve-3d; }
+        .social .container .social-item a:hover {
+          animation: icon-rotate 3s linear infinite; }
+      .social .container .social-item .vk {
+        background-position: -20px -70px; }
+      .social .container .social-item .gp {
+        background-position: -90px 0; }
+      .social .container .social-item .fb {
+        background-position: -20px -140px; }
+      .social .container .social-item .yt {
+        background-position: -90px -140px; }
+      .social .container .social-item .in {
+        background-position: -20px -210px; }
+      .social .container .social-item .tw {
+        background-position: -230px -280px; }
 
 html {
   height: 100%;

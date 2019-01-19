@@ -60,11 +60,19 @@
 
         h4 {
           margin-bottom: 5px;
+          transition: text-shadow .3s ease;
         }
 
         p {
           margin: 0;
           opacity: 0.7;
+          transition: text-shadow .3s ease;
+        }
+
+        h4, p {
+          &:hover {
+            text-shadow: 0 0 10px mediumpurple;
+          }
         }
       }
     }

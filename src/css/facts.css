@@ -6,6 +6,12 @@
   to {
     background-position: 0% 0%; } }
 
+@keyframes icon-rotate {
+  from {
+    transform: rotateX(0); }
+  to {
+    transform: rotateY(360deg); } }
+
 .facts {
   box-sizing: border-box;
   padding: 0 15px var(--main-bottom-padding) 15px;
