@@ -883,7 +883,7 @@ header {
   z-index: 2; }
   .offer .background-container {
     background: linear-gradient(135deg, orange, blue);
-    width: calc((100% - 955px) / 2 + 315px);
+    width: calc((100% - 955px) / 2 + 305px);
     height: 100%;
     position: absolute;
     left: 0;
