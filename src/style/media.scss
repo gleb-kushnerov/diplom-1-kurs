@@ -1,10 +1,44 @@
 @import "mixins";
 
+@media (max-width: 1200px) {
+  #offer {
+    .background-container {
+      width: calc((100% - 955px) / 2 + 477px);
+    }
+
+    .container {
+      flex-direction: column;
+
+      .offer-card {
+        margin: 0;
+        order: 2;
+      }
+
+      .offer-info {
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin: 0 0 40px 0;
+        width: 100%;
+        order: 1;
+        z-index: 3;
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
 @media (max-width: 1040px) {
   .about-us {
     .container {
       width: 100%;
       padding: 0 30px;
+    }
+  }
+
+  #team {
+    &::after {
+      width: 100%;
+      left: 0;
     }
   }
 }
@@ -27,7 +61,6 @@
   }
 
   #features {
-
     .container {
       width: 100%;
       display: grid;
@@ -81,6 +114,46 @@
     #services-bg {
       width: 100%;
       filter: brightness(60%);
+    }
+  }
+
+  #team {
+    .container {
+      box-sizing: border-box;
+      padding: 0 10px;
+      width: 100%;
+    }
+  }
+
+  #offer {
+    .background-container {
+      width: 50%;
+    }
+
+    .container {
+      width: 100%;
+
+      .offer-info {
+        width: 90%;
+      }
+    }
+  }
+
+  #social {
+    .container {
+      width: 100%;
+    }
+  }
+
+  #footer {
+    .container {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .features-item + .features-item {
+        margin-left: 30px;
+      }
     }
   }
 }
@@ -144,6 +217,25 @@
   }
 }
 
+@media (max-width: 790px) {
+  #offer {
+    .container {
+      .offer-card {
+        width: 100%;
+
+        ul {
+          box-sizing: border-box;
+          padding: 0 10px 0 15px;
+
+          li:hover {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   header {
     p {
@@ -152,6 +244,23 @@
 
     h1 {
       font-size: 4em;
+    }
+  }
+
+  #team {
+    &::after {
+      width: 0;
+    }
+
+    .container {
+      .team-item {
+        flex-direction: column;
+        align-items: center;
+
+        .team-member-card {
+          width: 60%;
+        }
+      }
     }
   }
 }
@@ -205,6 +314,47 @@
 
         td {
           transform: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  #offer {
+    .background-container {
+      width: 100%;
+      height: 50%;
+    }
+
+    .container {
+      .offer-card {
+        flex-direction: column;
+
+        .offer-item {
+          width: 100%;
+        }
+
+        button {
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+  #social {
+    .container {
+      .social-item {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          margin-top: 10px;
+        }
+
+        a + a {
+          margin-left: 20px;
         }
       }
     }
