@@ -1,0 +1,70 @@
+@import "mixins";
+
+footer {
+  padding: var(--main-bottom-padding) 0 var(--main-bottom-padding) 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-item {
+      @include border-radius-10px;
+
+      position: relative;
+      box-sizing: border-box;
+      padding-left: 10px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all .3s ease;
+
+      &:hover {
+        background-color: #ffbf4b;
+        color: #00f;
+        opacity: 0.8;
+
+        .mail {
+          background-position: -160px -140px;
+        }
+
+        .phone {
+          background-position: -90px -280px;
+        }
+
+        .address {
+          background-position: -90px -70px;
+        }
+      }
+
+      .footer-item-content {
+        flex: 0 0 auto;
+      }
+
+      .img-container {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 auto;
+        background: url("../img/sprite.png");
+        opacity: 0.7;
+      }
+
+      .mail {
+        background-position: -230px -140px;
+      }
+
+      .phone {
+        background-position: -160px -280px;
+      }
+
+      .address {
+        background-position: -160px -70px;
+      }
+
+      .footer-item-content {
+        width: 230px;
+      }
+    }
+  }
+}

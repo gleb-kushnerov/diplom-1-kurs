@@ -848,6 +848,49 @@ header {
       .social .container .social-item .tw {
         background-position: -230px -280px; }
 
+footer {
+  padding: var(--main-bottom-padding) 0 var(--main-bottom-padding) 0; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .container .footer-item {
+      border-radius: 10px;
+      position: relative;
+      box-sizing: border-box;
+      padding-left: 10px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all .3s ease; }
+      footer .container .footer-item:hover {
+        background-color: #ffbf4b;
+        color: #00f;
+        opacity: 0.8; }
+        footer .container .footer-item:hover .mail {
+          background-position: -160px -140px; }
+        footer .container .footer-item:hover .phone {
+          background-position: -90px -280px; }
+        footer .container .footer-item:hover .address {
+          background-position: -90px -70px; }
+      footer .container .footer-item .footer-item-content {
+        flex: 0 0 auto; }
+      footer .container .footer-item .img-container {
+        width: 50px;
+        height: 50px;
+        flex: 0 0 auto;
+        background: url("../img/sprite.png");
+        opacity: 0.7; }
+      footer .container .footer-item .mail {
+        background-position: -230px -140px; }
+      footer .container .footer-item .phone {
+        background-position: -160px -280px; }
+      footer .container .footer-item .address {
+        background-position: -160px -70px; }
+      footer .container .footer-item .footer-item-content {
+        width: 230px; }
+
 html {
   height: 100%;
   width: 100%; }
