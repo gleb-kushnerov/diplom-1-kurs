@@ -53,6 +53,8 @@
       #features .container .features-item .features-item-blur-container {
         border-radius: 0;
         filter: blur(5px); }
+    #features .container .features-item-main h2 {
+      margin-top: 0; }
   .services .container {
     box-sizing: border-box;
     padding-left: 50px;

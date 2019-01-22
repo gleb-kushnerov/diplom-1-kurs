@@ -3,7 +3,7 @@
 
 header {
   box-sizing: border-box;
-  height: 800px;
+  padding-bottom: 220px;
   background-color: blue;
   color: #fff;
   background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(0, 0, 255, 0.7)),
@@ -31,6 +31,8 @@ header {
       font-size: 3.3em;
       letter-spacing: -3px;
       font-weight: bold;
+      color: #fff;
+      text-decoration: none;
       &::after {
         content: ".";
         color: #fba419;
@@ -93,4 +95,8 @@ header {
       color: #000;
     }
   }
+}
+
+#header {
+  padding-bottom: 40px;
 }

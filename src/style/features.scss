@@ -1,7 +1,7 @@
 @import "mixins";
 
 .features {
-  padding-bottom: var(--main-bottom-padding);
+  padding: var(--main-bottom-padding) 0;
 
   .container {
     box-sizing: border-box;
@@ -133,7 +133,7 @@
 
 
       h2 {
-        margin: 0;
+        margin: 35px 0 0 0;
         font-weight: normal;
       }
 

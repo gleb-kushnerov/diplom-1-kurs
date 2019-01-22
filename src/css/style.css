@@ -58,6 +58,8 @@
       #features .container .features-item .features-item-blur-container {
         border-radius: 0;
         filter: blur(5px); }
+    #features .container .features-item-main h2 {
+      margin-top: 0; }
   .services .container {
     box-sizing: border-box;
     padding-left: 50px;
@@ -238,7 +240,7 @@
 
 header {
   box-sizing: border-box;
-  height: 800px;
+  padding-bottom: 220px;
   background-color: blue;
   color: #fff;
   background: linear-gradient(to bottom right, rgba(255, 165, 0, 0.7), rgba(0, 0, 255, 0.7)), url("../img/bg-header2.jpg") no-repeat top center;
@@ -258,7 +260,9 @@ header {
   header .logo {
     font-size: 3.3em;
     letter-spacing: -3px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; }
     header .logo::after {
       content: ".";
       color: #fba419; }
@@ -299,6 +303,9 @@ header {
     background-color: #fff; }
     header button a {
       color: #000; }
+
+#header {
+  padding-bottom: 40px; }
 
 @keyframes btn-hover {
   from {
@@ -414,6 +421,8 @@ header {
       #features .container .features-item .features-item-blur-container {
         border-radius: 0;
         filter: blur(5px); }
+    #features .container .features-item-main h2 {
+      margin-top: 0; }
   .services .container {
     box-sizing: border-box;
     padding-left: 50px;
@@ -641,7 +650,7 @@ header {
         font-family: Berlin; }
 
 .features {
-  padding-bottom: var(--main-bottom-padding); }
+  padding: var(--main-bottom-padding) 0; }
   .features .container {
     box-sizing: border-box;
     display: grid;
@@ -723,7 +732,7 @@ header {
       top: 169px;
       text-align: center; }
       .features .container .features-item-main h2 {
-        margin: 0;
+        margin: 35px 0 0 0;
         font-weight: normal; }
       .features .container .features-item-main p {
         font-style: italic;
@@ -996,7 +1005,8 @@ header {
         background-position: -230px -280px; }
 
 footer {
-  padding: var(--main-bottom-padding) 0 var(--main-bottom-padding) 0; }
+  padding: var(--main-bottom-padding) 0 var(--main-bottom-padding) 0;
+  background-color: rgba(179, 178, 174, 0.2); }
   footer .container {
     display: flex;
     justify-content: space-between;
