@@ -81,7 +81,11 @@
     flex-wrap: wrap;
     justify-content: center; }
     #footer .container .features-item + .features-item {
-      margin-left: 30px; } }
+      margin-left: 30px; }
+  #header.contact-us .container {
+    width: 100%; }
+    #header.contact-us .container form {
+      border-radius: 0; } }
 
 @media (max-width: 966px) {
   .services .container {
@@ -195,7 +199,13 @@
   header nav {
     width: 100%; }
   header p {
-    width: 70%; } }
+    width: 70%; }
+  #header.contact-us .container form .form-item-1 {
+    flex-direction: column; }
+    #header.contact-us .container form .form-item-1 input {
+      width: 100%; }
+    #header.contact-us .container form .form-item-1 input:not(:last-child) {
+      margin-bottom: var(--margin-top-form); } }
 
 @media (max-width: 520px) {
   header h1 {

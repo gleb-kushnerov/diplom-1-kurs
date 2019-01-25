@@ -162,6 +162,16 @@
       }
     }
   }
+
+  #header.contact-us {
+    .container {
+      width: 100%;
+
+      form {
+        border-radius: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 966px) {
@@ -379,6 +389,24 @@
 
     p {
       width: 70%;
+    }
+  }
+
+  #header.contact-us {
+    .container {
+      form {
+        .form-item-1 {
+          flex-direction: column;
+
+          input {
+            width: 100%;
+          }
+
+          input:not(:last-child) {
+            margin-bottom: var(--margin-top-form);
+          }
+        }
+      }
     }
   }
 }
