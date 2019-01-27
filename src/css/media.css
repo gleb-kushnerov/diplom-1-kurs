@@ -176,6 +176,14 @@
     .services .container #services-item-2 td {
       transform: none; } }
 
+@media (max-width: 650px) {
+  header .header-top {
+    align-items: flex-start; }
+  header .main-menu {
+    display: none; }
+  header .alternative-menu-container {
+    display: block; } }
+
 @media (max-width: 582px) {
   #offer .background-container {
     width: 100%;
@@ -196,10 +204,6 @@
       margin-left: 20px; } }
 
 @media (max-width: 547px) {
-  header .logo {
-    display: none; }
-  header nav {
-    width: 100%; }
   header p {
     width: 70%; }
   #header.contact-us .container form .form-item-1 {
@@ -231,6 +235,10 @@
           width: 50%; } }
 
 @media (max-width: 400px) {
+  header .header-top {
+    justify-content: flex-end; }
+  header .logo {
+    display: none; }
   header h1 {
     font-size: 2em; }
   .facts .facts-item {

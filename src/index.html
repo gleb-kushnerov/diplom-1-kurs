@@ -5,28 +5,50 @@
     <title>digital.</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script defer src="main.js"></script>
+    <script defer src="script/big-pictures.js"></script>
+    <script defer src="script/menu-btn.js"></script>
 </head>
 <body>
 
 <header>
     <div class="header-top">
         <a href="../index.html" class="logo">digital</a>
-        <nav>
+        <nav class="main-menu">
             <ul>
-                <li><a href="#">test</a></li>
+                <li><a href="../features.html">Services</a></li>
+                <li><a href="../about-us.html">About us</a></li>
                 <li><a href="../our-team.html">Our team</a></li>
                 <li><a href="../contact-us.html">Contact us</a></li>
-                <li><a href="../features.html">Services</a></li>
             </ul>
         </nav>
+
+    <div class="alternative-menu-container">
+        <div class="alternative-menu" id="alternative-menu">
+            <input type="checkbox" id="menu-checkbox" class="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="../features.html">Services</a></li>
+                    <li><a href="../about-us.html">About us</a></li>
+                    <li><a href="../our-team.html">Our team</a></li>
+                    <li><a href="../contact-us.html">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <div id="menu-checkbox-container">
+                <label for="menu-checkbox" class="menu-btn" id="menu-btn">
+                    <span class="hamburger" id="hamburger"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
     </div>
     <h1>Simply the Best</h1>
     <h3>Reason for Choosing Us</h3>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut, culpa delectus dolor eaque enim, ex laborum magni maiores non numquam optio quaerat, quis recusandae sapiente.
     </p>
-    <button type="button" class="btn-white"><a href="#">Read more</a></button>
+    <button type="button" class="btn-white"><a href="../about-us.html">Read more</a></button>
 </header>
 
 <section class="facts">
@@ -38,7 +60,7 @@
         <p>
             Ab alias consectetur, culpa cupiditate dolor esse ex expedita iste magnam modi nemo nisi odio odit perspiciatis.
         </p>
-        <button type="button"><a href="#">Read more</a></button>
+        <button type="button"><a href="../about-us.html">Read more</a></button>
     </div>
     <div class="facts-item">
         <div class="facts-item-overflow-container">
@@ -48,7 +70,7 @@
         <p>
             Ab alias consectetur, culpa cupiditate dolor esse ex expedita iste magnam modi nemo nisi odio odit perspiciatis.
         </p>
-        <button type="button"><a href="#">Read more</a></button>
+        <button type="button"><a href="../about-us.html">Read more</a></button>
     </div>
     <div class="facts-item facts-item-last">
         <div class="facts-item-overflow-container">
@@ -58,7 +80,7 @@
         <p>
             Ab alias consectetur, culpa cupiditate dolor esse ex expedita iste magnam modi nemo nisi odio odit perspiciatis.
         </p>
-        <button type="button"><a href="#">Read more</a></button>
+        <button type="button"><a href="../about-us.html">Read more</a></button>
     </div>
 
 </section>
@@ -71,7 +93,7 @@
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio dolores illum impedit in laudantium magnam minus.</span><br>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consequatur culpa ducimus ex harum impedit quae quasi qui! Eligendi eveniet, illum impedit iure non obcaecati totam. Aliquid facere harum laborum!
             </p>
-            <button type="button"><a href="#">Read more</a></button>
+            <button type="button"><a href="../about-us.html">Read more</a></button>
         </div>
         <div class="quote">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis corporis dignissimos dolores earum eligendi hic ipsum iure maiores mollitia nesciunt non omnis quibusdam repellat rerum sint, sit tempora ut. Corporis dignissimos dolores earum eligendi hic ipsum iure maiores mollitia nesciunt non omnis quibusdam repellat rerum sint mollitia nesciunt.</p>

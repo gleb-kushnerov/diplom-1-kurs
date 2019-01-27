@@ -340,6 +340,22 @@
   }
 }
 
+@media (max-width: 650px) {
+  header {
+    .header-top {
+      align-items: flex-start;
+    }
+
+    .main-menu {
+      display: none;
+    }
+
+    .alternative-menu-container {
+      display: block;
+    }
+  }
+}
+
 @media (max-width: 582px) {
   #offer {
     .background-container {
@@ -383,14 +399,6 @@
 
 @media (max-width: 547px) {
   header {
-    .logo {
-      display: none;
-    }
-
-    nav {
-      width: 100%;
-    }
-
     p {
       width: 70%;
     }
@@ -458,6 +466,14 @@
 
 @media (max-width: 400px) {
   header {
+    .header-top {
+      justify-content: flex-end;
+    }
+
+    .logo {
+      display: none;
+    }
+
     h1 {
       font-size: 2em;
     }

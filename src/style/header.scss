@@ -101,6 +101,101 @@ header {
       color: #000;
     }
   }
+
+  .alternative-menu-container {
+    display: none;
+
+    .alternative-menu {
+      display: flex;
+      justify-content: space-between;
+
+      .checkbox {
+        visibility: hidden;
+        position: absolute;
+      }
+
+      nav {
+        opacity: 0;
+        transition: opacity .3s ease;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+
+      li + li {
+        margin: 20px 0 0 0;
+      }
+
+      .menu-btn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hamburger {
+          display: block;
+          flex: 0 0 auto;
+          width: 100%;
+          height: 5px;
+          background: rgba(255, 255, 255, 0.6);
+          position: relative;
+          transition: transform .3s ease;
+
+          &::before, &::after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            transition: transform .3s ease;
+          }
+
+          &::before {
+            top: -10px;
+          }
+
+          &::after {
+            top: 10px;
+          }
+        }
+      }
+
+      input[type="checkbox"]:checked + nav {
+        opacity: 1;
+      }
+
+      .hamburger.active,
+      .hamburger.active:hover {
+        background: transparent;
+      }
+
+      .hamburger.active {
+        &::before {
+          transform: translateY(10px) rotate(45deg);
+        }
+
+        &::after {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
+    }
+
+    #menu-checkbox-container {
+      height: 50px;
+    }
+
+    #menu-checkbox-container:hover .hamburger,
+    #menu-checkbox-container:hover .hamburger::before,
+    #menu-checkbox-container:hover .hamburger::after {
+      background: #fff;
+    }
+
+    #menu-checkbox-container:hover .hamburger.active {
+      background: transparent;
+    }
+  }
 }
 
 #header {

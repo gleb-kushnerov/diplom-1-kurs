@@ -5,20 +5,40 @@
     <title>Features</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script defer src="script/menu-btn.js"></script>
 </head>
 <body>
 
 <header id="header">
     <div class="header-top">
         <a href="../index.html" class="logo">digital</a>
-        <nav>
+        <nav class="main-menu">
             <ul>
-                <li><a href="#">test</a></li>
+                <li><a href="../features.html">Services</a></li>
+                <li><a href="../about-us.html">About us</a></li>
                 <li><a href="../our-team.html">Our team</a></li>
                 <li><a href="../contact-us.html">Contact us</a></li>
-                <li><a href="../features.html">Features</a></li>
             </ul>
         </nav>
+
+        <div class="alternative-menu-container">
+            <div class="alternative-menu" id="alternative-menu">
+                <input type="checkbox" id="menu-checkbox" class="checkbox">
+                <nav>
+                    <ul>
+                        <li><a href="../features.html">Services</a></li>
+                        <li><a href="../about-us.html">About us</a></li>
+                        <li><a href="../our-team.html">Our team</a></li>
+                        <li><a href="../contact-us.html">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div id="menu-checkbox-container">
+                    <label for="menu-checkbox" class="menu-btn" id="menu-btn">
+                        <span class="hamburger" id="hamburger"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 

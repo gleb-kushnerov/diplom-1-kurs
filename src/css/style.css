@@ -182,6 +182,14 @@
     .services .container #services-item-2 td {
       transform: none; } }
 
+@media (max-width: 650px) {
+  header .header-top {
+    align-items: flex-start; }
+  header .main-menu {
+    display: none; }
+  header .alternative-menu-container {
+    display: block; } }
+
 @media (max-width: 582px) {
   #offer .background-container {
     width: 100%;
@@ -202,10 +210,6 @@
       margin-left: 20px; } }
 
 @media (max-width: 547px) {
-  header .logo {
-    display: none; }
-  header nav {
-    width: 100%; }
   header p {
     width: 70%; }
   #header.contact-us .container form .form-item-1 {
@@ -237,6 +241,10 @@
           width: 50%; } }
 
 @media (max-width: 400px) {
+  header .header-top {
+    justify-content: flex-end; }
+  header .logo {
+    display: none; }
   header h1 {
     font-size: 2em; }
   .facts .facts-item {
@@ -319,6 +327,63 @@ header {
     background-color: #fff; }
     header button a {
       color: #000; }
+  header .alternative-menu-container {
+    display: none; }
+    header .alternative-menu-container .alternative-menu {
+      display: flex;
+      justify-content: space-between; }
+      header .alternative-menu-container .alternative-menu .checkbox {
+        visibility: hidden;
+        position: absolute; }
+      header .alternative-menu-container .alternative-menu nav {
+        opacity: 0;
+        transition: opacity .3s ease; }
+      header .alternative-menu-container .alternative-menu ul {
+        flex-direction: column; }
+      header .alternative-menu-container .alternative-menu li + li {
+        margin: 20px 0 0 0; }
+      header .alternative-menu-container .alternative-menu .menu-btn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .alternative-menu-container .alternative-menu .menu-btn .hamburger {
+          display: block;
+          flex: 0 0 auto;
+          width: 100%;
+          height: 5px;
+          background: rgba(255, 255, 255, 0.6);
+          position: relative;
+          transition: transform .3s ease; }
+          header .alternative-menu-container .alternative-menu .menu-btn .hamburger::before, header .alternative-menu-container .alternative-menu .menu-btn .hamburger::after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            transition: transform .3s ease; }
+          header .alternative-menu-container .alternative-menu .menu-btn .hamburger::before {
+            top: -10px; }
+          header .alternative-menu-container .alternative-menu .menu-btn .hamburger::after {
+            top: 10px; }
+      header .alternative-menu-container .alternative-menu input[type="checkbox"]:checked + nav {
+        opacity: 1; }
+      header .alternative-menu-container .alternative-menu .hamburger.active,
+      header .alternative-menu-container .alternative-menu .hamburger.active:hover {
+        background: transparent; }
+      header .alternative-menu-container .alternative-menu .hamburger.active::before {
+        transform: translateY(10px) rotate(45deg); }
+      header .alternative-menu-container .alternative-menu .hamburger.active::after {
+        transform: translateY(-10px) rotate(-45deg); }
+    header .alternative-menu-container #menu-checkbox-container {
+      height: 50px; }
+    header .alternative-menu-container #menu-checkbox-container:hover .hamburger,
+    header .alternative-menu-container #menu-checkbox-container:hover .hamburger::before,
+    header .alternative-menu-container #menu-checkbox-container:hover .hamburger::after {
+      background: #fff; }
+    header .alternative-menu-container #menu-checkbox-container:hover .hamburger.active {
+      background: transparent; }
 
 #header {
   padding-bottom: 40px; }
@@ -568,6 +633,14 @@ header {
     .services .container #services-item-2 td {
       transform: none; } }
 
+@media (max-width: 650px) {
+  header .header-top {
+    align-items: flex-start; }
+  header .main-menu {
+    display: none; }
+  header .alternative-menu-container {
+    display: block; } }
+
 @media (max-width: 582px) {
   #offer .background-container {
     width: 100%;
@@ -588,10 +661,6 @@ header {
       margin-left: 20px; } }
 
 @media (max-width: 547px) {
-  header .logo {
-    display: none; }
-  header nav {
-    width: 100%; }
   header p {
     width: 70%; }
   #header.contact-us .container form .form-item-1 {
@@ -623,6 +692,10 @@ header {
           width: 50%; } }
 
 @media (max-width: 400px) {
+  header .header-top {
+    justify-content: flex-end; }
+  header .logo {
+    display: none; }
   header h1 {
     font-size: 2em; }
   .facts .facts-item {
