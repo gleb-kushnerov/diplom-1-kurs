@@ -1,0 +1,85 @@
+@import "mixins";
+
+.our-team {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+  .container {
+    .our-team-item {
+      width: 100%;
+
+      .info {
+        width: 370px;
+
+        h4 {
+          margin: 0;
+        }
+
+        .specifications {
+          width: 100%;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .specifications-item {
+            width: 100%;
+            height: 100px;
+
+            .specifications-item-header {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+            }
+
+            .progress-bar-container {
+              width: 100%;
+              position: relative;
+
+              &::before {
+                @include border-radius-10px;
+
+                content: "";
+                display: block;
+                width: 100%;
+                height: 10px;
+                position: absolute;
+                top: 10px;
+                background: rgba(138, 137, 133, 0.55);
+              }
+
+              .progress-bar {
+                @include border-radius-10px;
+                @include orange-blue-gradient(to right);
+
+                height: 10px;
+
+                &:hover {
+                  animation: btn-hover 3s ease infinite;
+                  background-size: 400%;
+                  background-position: 250% 0;
+                }
+              }
+
+              .progress-bar-1 {
+                width: 99%;
+              }
+
+              .progress-bar-2 {
+                width:100%;
+              }
+
+              .progress-bar-3 {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

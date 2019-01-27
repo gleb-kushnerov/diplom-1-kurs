@@ -12,6 +12,14 @@
   to {
     transform: rotateY(360deg); } }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
 .facts {
   box-sizing: border-box;
   padding: 0 15px var(--main-bottom-padding) 15px;

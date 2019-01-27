@@ -148,7 +148,9 @@
     flex-direction: column;
     align-items: center; }
     #team .container .team-item .team-member-card {
-      width: 60%; } }
+      width: 60%; }
+      #team .container .team-item .team-member-card img:hover {
+        transform: none; } }
 
 @media (max-width: 690px) {
   .facts {
@@ -273,7 +275,10 @@ header {
     letter-spacing: -3px;
     font-weight: bold;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: text-shadow .3s ease; }
+    header .logo:hover {
+      text-shadow: 0 0 20px #000; }
     header .logo::after {
       content: ".";
       color: #fba419; }
@@ -331,6 +336,14 @@ header {
     transform: rotateX(0); }
   to {
     transform: rotateY(360deg); } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
 
 .facts {
   box-sizing: border-box;
@@ -521,7 +534,9 @@ header {
     flex-direction: column;
     align-items: center; }
     #team .container .team-item .team-member-card {
-      width: 60%; } }
+      width: 60%; }
+      #team .container .team-item .team-member-card img:hover {
+        transform: none; } }
 
 @media (max-width: 690px) {
   .facts {
@@ -846,6 +861,28 @@ header {
     right: 0;
     z-index: 0; }
 
+@keyframes btn-hover {
+  from {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 0%; }
+  to {
+    background-position: 0% 0%; } }
+
+@keyframes icon-rotate {
+  from {
+    transform: rotateX(0); }
+  to {
+    transform: rotateY(360deg); } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
 .team {
   margin-bottom: var(--main-bottom-padding);
   text-align: center;
@@ -858,35 +895,22 @@ header {
     .team .container .team-item {
       width: 100%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      position: relative;
+      z-index: 2; }
       .team .container .team-item .team-member-card {
         margin-bottom: 15px;
         width: 18%; }
-        .team .container .team-item .team-member-card .avatar-place {
+        .team .container .team-item .team-member-card img {
           border-radius: 10px;
           width: 100%;
-          height: 250px;
+          height: auto;
           filter: grayscale(100%);
           transition: all .3s ease;
           z-index: 2; }
-          .team .container .team-item .team-member-card .avatar-place:hover {
+          .team .container .team-item .team-member-card img:hover {
             filter: grayscale(0);
             transform: scale(1.1); }
-        .team .container .team-item .team-member-card .avatar-place-1 {
-          background: url("../img/team-member-avatar-1.jpg") no-repeat 40%;
-          background-size: cover; }
-        .team .container .team-item .team-member-card .avatar-place-2 {
-          background: url("../img/team-member-avatar-2.jpg") no-repeat 52%;
-          background-size: cover; }
-        .team .container .team-item .team-member-card .avatar-place-3 {
-          background: url("../img/team-member-avatar-3.jpg") no-repeat 50%;
-          background-size: cover; }
-        .team .container .team-item .team-member-card .avatar-place-4 {
-          background: url("../img/team-member-avatar-4.jpg") no-repeat 50% 90%;
-          background-size: cover; }
-        .team .container .team-item .team-member-card .avatar-place-5 {
-          background: url("../img/team-member-avatar-5.jpg") no-repeat 40%;
-          background-size: cover; }
         .team .container .team-item .team-member-card h4 {
           margin-bottom: 5px;
           transition: text-shadow .3s ease; }
@@ -896,6 +920,58 @@ header {
           transition: text-shadow .3s ease; }
         .team .container .team-item .team-member-card h4:hover, .team .container .team-item .team-member-card p:hover {
           text-shadow: 0 0 10px mediumpurple; }
+      .team .container .team-item #preview-container {
+        animation: fade-in .3s ease;
+        position: absolute;
+        z-index: 5;
+        width: 80%;
+        height: auto;
+        box-shadow: 0 0 20px #000;
+        background: rgba(179, 178, 174, 0.69);
+        top: -90px;
+        left: 10%;
+        display: none; }
+        .team .container .team-item #preview-container #x-mark-container {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          z-index: 5; }
+          .team .container .team-item #preview-container #x-mark-container:hover #x-mark, .team .container .team-item #preview-container #x-mark-container:hover #x-mark::before {
+            background: black; }
+          .team .container .team-item #preview-container #x-mark-container #x-mark {
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 5px;
+            background: #8a8985;
+            z-index: 5;
+            transform: rotate(45deg);
+            right: 5px;
+            top: 22px;
+            transition: all .3s ease; }
+            .team .container .team-item #preview-container #x-mark-container #x-mark::before {
+              content: "";
+              display: block;
+              width: 40px;
+              height: 5px;
+              background: #8a8985;
+              transform: rotate(-90deg);
+              transition: all .3s ease; }
+        .team .container .team-item #preview-container .preview {
+          border-radius: 10px;
+          animation: fade-in .3s ease;
+          height: auto;
+          width: 100%;
+          box-shadow: 0 0 20px black;
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 4;
+          flex: 0 0 auto; }
+      .team .container .team-item #preview-container.visible {
+        display: block; }
   .team::after {
     content: "";
     width: 94%;
@@ -1124,6 +1200,58 @@ header.contact-us .container {
     header.contact-us .container form .btn-white {
       margin-top: var(--margin-top-form);
       width: 138px; }
+
+.our-team h2 {
+  margin-bottom: 0; }
+
+.our-team h4 {
+  font-size: 1.1em; }
+
+.our-team .container .our-team-item {
+  width: 100%; }
+  .our-team .container .our-team-item .info {
+    width: 370px; }
+    .our-team .container .our-team-item .info h4 {
+      margin: 0; }
+    .our-team .container .our-team-item .info .specifications {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .our-team .container .our-team-item .info .specifications .specifications-item {
+        width: 100%;
+        height: 100px; }
+        .our-team .container .our-team-item .info .specifications .specifications-item .specifications-item-header {
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+        .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container {
+          width: 100%;
+          position: relative; }
+          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container::before {
+            border-radius: 10px;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 10px;
+            position: absolute;
+            top: 10px;
+            background: rgba(138, 137, 133, 0.55); }
+          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar {
+            border-radius: 10px;
+            background: linear-gradient(to right, orange, blue);
+            height: 10px; }
+            .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar:hover {
+              animation: btn-hover 3s ease infinite;
+              background-size: 400%;
+              background-position: 250% 0; }
+          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-1 {
+            width: 99%; }
+          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-2 {
+            width: 100%; }
+          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-3 {
+            width: 80%; }
 
 html {
   height: 100%;

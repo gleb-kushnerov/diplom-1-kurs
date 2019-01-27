@@ -275,6 +275,10 @@
 
         .team-member-card {
           width: 60%;
+
+          img:hover {
+            transform: none;
+          }
         }
       }
     }

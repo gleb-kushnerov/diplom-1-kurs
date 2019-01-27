@@ -142,7 +142,9 @@
     flex-direction: column;
     align-items: center; }
     #team .container .team-item .team-member-card {
-      width: 60%; } }
+      width: 60%; }
+      #team .container .team-item .team-member-card img:hover {
+        transform: none; } }
 
 @media (max-width: 690px) {
   .facts {
@@ -267,7 +269,10 @@ header {
     letter-spacing: -3px;
     font-weight: bold;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: text-shadow .3s ease; }
+    header .logo:hover {
+      text-shadow: 0 0 20px #000; }
     header .logo::after {
       content: ".";
       color: #fba419; }

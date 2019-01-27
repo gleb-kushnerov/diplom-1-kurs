@@ -33,6 +33,12 @@ header {
       font-weight: bold;
       color: #fff;
       text-decoration: none;
+      transition: text-shadow .3s ease;
+
+      &:hover {
+        text-shadow: 0 0 20px #000;
+      }
+
       &::after {
         content: ".";
         color: #fba419;
