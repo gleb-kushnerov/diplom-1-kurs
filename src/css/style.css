@@ -1274,57 +1274,186 @@ header.contact-us .container {
       margin-top: var(--margin-top-form);
       width: 138px; }
 
-.our-team h2 {
-  margin-bottom: 0; }
-
-.our-team h4 {
-  font-size: 1.1em; }
-
-.our-team .container .our-team-item {
-  width: 100%; }
-  .our-team .container .our-team-item .info {
-    width: 370px; }
-    .our-team .container .our-team-item .info h4 {
-      margin: 0; }
-    .our-team .container .our-team-item .info .specifications {
+.our-team {
+  box-sizing: border-box;
+  padding: 50px 0 var(--main-bottom-padding) 0;
+  position: relative; }
+  .our-team .background-container {
+    background: linear-gradient(135deg, orange, blue);
+    position: absolute;
+    height: 680px;
+    width: calc((100% - 955px) / 2 + 287px);
+    z-index: 1; }
+  .our-team .background-container-1 {
+    right: 0; }
+  .our-team .background-container-2 {
+    left: 0;
+    top: 780px;
+    width: calc((100% - 955px) / 2 + 307px); }
+  .our-team .background-container-3 {
+    right: 0;
+    top: 1510px;
+    width: calc((100% - 955px) / 2 + 287px); }
+  .our-team .background-container-4 {
+    left: 0;
+    top: 2240px;
+    width: calc((100% - 955px) / 2 + 307px); }
+  .our-team .background-container-5 {
+    right: 0;
+    top: 2970px;
+    width: calc((100% - 955px) / 2 + 287px); }
+  .our-team h2 {
+    margin-bottom: 0; }
+  .our-team h4 {
+    font-size: 1.1em; }
+  .our-team .container {
+    z-index: 5; }
+    .our-team .container .our-team-item + .our-team-item {
+      margin-top: 50px; }
+    .our-team .container .our-team-item {
       width: 100%;
-      height: 300px;
+      height: 680px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .our-team .container .our-team-item .info .specifications .specifications-item {
-        width: 100%;
-        height: 100px; }
-        .our-team .container .our-team-item .info .specifications .specifications-item .specifications-item-header {
+      align-items: flex-start;
+      z-index: 5; }
+      .our-team .container .our-team-item .info {
+        width: 370px; }
+        .our-team .container .our-team-item .info h4 {
+          margin: 0; }
+        .our-team .container .our-team-item .info .specifications {
           width: 100%;
+          height: 300px;
           display: flex;
+          flex-direction: column;
           justify-content: space-between; }
-        .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container {
-          width: 100%;
-          position: relative; }
-          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container::before {
-            border-radius: 10px;
-            content: "";
-            display: block;
+          .our-team .container .our-team-item .info .specifications .specifications-item {
             width: 100%;
-            height: 10px;
-            position: absolute;
-            top: 10px;
-            background: rgba(138, 137, 133, 0.55); }
-          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar {
-            border-radius: 10px;
-            background: linear-gradient(to right, orange, blue);
-            height: 10px; }
-            .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar:hover {
-              animation: btn-hover 3s ease infinite;
-              background-size: 400%;
-              background-position: 250% 0; }
-          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-1 {
-            width: 99%; }
-          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-2 {
-            width: 100%; }
-          .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-3 {
-            width: 80%; }
+            height: 100px; }
+            .our-team .container .our-team-item .info .specifications .specifications-item .specifications-item-header {
+              width: 100%;
+              display: flex;
+              justify-content: space-between; }
+            .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container {
+              width: 100%;
+              position: relative; }
+              .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container::before {
+                border-radius: 10px;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 10px;
+                position: absolute;
+                top: 10px;
+                background: rgba(138, 137, 133, 0.55); }
+              .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar {
+                border-radius: 10px;
+                background: linear-gradient(to right, orange, blue);
+                height: 10px; }
+                .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar:hover {
+                  animation: btn-hover 3s ease infinite;
+                  background-size: 400%;
+                  background-position: 250% 0; }
+              .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-1 {
+                width: 99%; }
+              .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-2 {
+                width: 100%; }
+              .our-team .container .our-team-item .info .specifications .specifications-item .progress-bar-container .progress-bar-3 {
+                width: 80%; }
+      .our-team .container .our-team-item .our-team-card {
+        margin-left: 30px;
+        width: 600px;
+        height: 680px;
+        display: flex;
+        z-index: 5; }
+        .our-team .container .our-team-item .our-team-card .photo-container {
+          flex: 0 0 auto;
+          width: 50%;
+          height: 100%;
+          background-size: cover; }
+        .our-team .container .our-team-item .our-team-card .js-photo {
+          background: url("../img/team-member-1.jpg") no-repeat 37% 0; }
+        .our-team .container .our-team-item .our-team-card .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 50px 0 70px 30px;
+          z-index: 5;
+          color: #fff; }
+          .our-team .container .our-team-item .our-team-card .info .footer {
+            display: flex;
+            justify-content: flex-start; }
+            .our-team .container .our-team-item .our-team-card .info .footer a {
+              display: block;
+              width: 50px;
+              height: 50px;
+              background: url("../img/sprite.png") no-repeat; }
+            .our-team .container .our-team-item .our-team-card .info .footer a + a {
+              margin-left: 10px; }
+            .our-team .container .our-team-item .our-team-card .info .footer .fb {
+              background-position: -230px -70px; }
+              .our-team .container .our-team-item .our-team-card .info .footer .fb:hover {
+                background-position: -20px -140px; }
+            .our-team .container .our-team-item .our-team-card .info .footer .gp {
+              background-position: -20px 0px; }
+              .our-team .container .our-team-item .our-team-card .info .footer .gp:hover {
+                background-position: -90px 0px; }
+            .our-team .container .our-team-item .our-team-card .info .footer .vk {
+              background-position: -230px 0px; }
+              .our-team .container .our-team-item .our-team-card .info .footer .vk:hover {
+                background-position: -20px -70px; }
+    .our-team .container .arya-stark {
+      flex-direction: row-reverse; }
+      .our-team .container .arya-stark #specifications .progress-bar-1 {
+        width: 87%; }
+      .our-team .container .arya-stark #specifications .progress-bar-2 {
+        width: 94%; }
+      .our-team .container .arya-stark #specifications .progress-bar-3 {
+        width: 96%; }
+    .our-team .container .our-team-card-2 {
+      flex-direction: row-reverse;
+      margin: 0 30px 0 0; }
+      .our-team .container .our-team-card-2 .as-photo {
+        background: url("../img/team-member-2.jpg") no-repeat 46% 0; }
+    .our-team .container .sansa-stark {
+      flex-direction: row; }
+      .our-team .container .sansa-stark #specifications .progress-bar-1 {
+        width: 92%; }
+      .our-team .container .sansa-stark #specifications .progress-bar-2 {
+        width: 91%; }
+      .our-team .container .sansa-stark #specifications .progress-bar-3 {
+        width: 89%; }
+    .our-team .container .our-team-card-3 {
+      flex-direction: row;
+      margin: 0 0 0 30px; }
+      .our-team .container .our-team-card-3 .ss-photo {
+        background: url("../img/team-member-3.jpg") no-repeat 46% 0; }
+    .our-team .container .khal-drogo {
+      flex-direction: row-reverse; }
+      .our-team .container .khal-drogo #specifications.kd .progress-bar-1 {
+        width: 75%; }
+      .our-team .container .khal-drogo #specifications.kd .progress-bar-2 {
+        width: 92%; }
+      .our-team .container .khal-drogo #specifications.kd .progress-bar-3 {
+        width: 84%; }
+    .our-team .container .our-team-card-4 {
+      flex-direction: row-reverse;
+      margin: 0 30px 0 0; }
+      .our-team .container .our-team-card-4 .kd-photo {
+        background: url("../img/team-member-4.jpg") no-repeat 46% 0; }
+    .our-team .container .daenerys-targaryen {
+      flex-direction: row; }
+      .our-team .container .daenerys-targaryen #specifications .progress-bar-1 {
+        width: 99%; }
+      .our-team .container .daenerys-targaryen #specifications .progress-bar-2 {
+        width: 99%; }
+      .our-team .container .daenerys-targaryen #specifications .progress-bar-3 {
+        width: 99%; }
+    .our-team .container .our-team-card-5 {
+      flex-direction: row;
+      margin: 0 0 0 30px; }
+      .our-team .container .our-team-card-5 .dt-photo {
+        background: url("../img/team-member-5.jpg") no-repeat 58% 0; }
 
 html {
   height: 100%;

@@ -1,6 +1,47 @@
 @import "mixins";
 
 .our-team {
+  box-sizing: border-box;
+  padding: 50px 0 var(--main-bottom-padding) 0;
+  position: relative;
+
+  .background-container {
+    @include orange-blue-gradient(135deg);
+
+    position: absolute;
+    height: 680px;
+    width: calc((100% - 955px) / 2 + 287px);
+    z-index: 1;
+  }
+
+  .background-container-1 {
+    right: 0;
+  }
+
+  .background-container-2 {
+    left: 0;
+    top: 780px;
+    width: calc((100% - 955px) / 2 + 307px);
+  }
+
+  .background-container-3 {
+    right: 0;
+    top: 1510px;
+    width: calc((100% - 955px) / 2 + 287px);
+  }
+
+  .background-container-4 {
+    left: 0;
+    top: 2240px;
+    width: calc((100% - 955px) / 2 + 307px);
+  }
+
+  .background-container-5 {
+    right: 0;
+    top: 2970px;
+    width: calc((100% - 955px) / 2 + 287px);
+  }
+
   h2 {
     margin-bottom: 0;
   }
@@ -8,9 +49,20 @@
   h4 {
     font-size: 1.1em;
   }
+
   .container {
+    z-index: 5;
+
+    .our-team-item + .our-team-item {
+      margin-top: 50px;
+    }
+
     .our-team-item {
       width: 100%;
+      height: 680px;
+      display: flex;
+      align-items: flex-start;
+      z-index: 5;
 
       .info {
         width: 370px;
@@ -79,6 +131,184 @@
             }
           }
         }
+      }
+
+      .our-team-card {
+        margin-left: 30px;
+        width: 600px;
+        height: 680px;
+        display: flex;
+        z-index: 5;
+
+        .photo-container {
+          flex: 0 0 auto;
+          width: 50%;
+          height: 100%;
+          background-size: cover;
+        }
+
+        .js-photo {
+          background: url("../img/team-member-1.jpg") no-repeat 37% 0;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 50px 0 70px 30px;
+          z-index: 5;
+          color: #fff;
+
+          .footer {
+            display: flex;
+            justify-content: flex-start;
+
+            a {
+              display: block;
+              width: 50px;
+              height: 50px;
+              background: url("../img/sprite.png") no-repeat;
+            }
+
+            a + a {
+              margin-left: 10px;
+            }
+
+            .fb {
+              background-position: -230px -70px;
+
+              &:hover {
+                background-position: -20px -140px;
+              }
+            }
+
+            .gp {
+              background-position: -20px 0px;
+
+              &:hover {
+                background-position: -90px 0px;
+              }
+            }
+
+            .vk {
+              background-position: -230px 0px;
+
+              &:hover {
+                background-position: -20px -70px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .arya-stark {
+      flex-direction: row-reverse;
+
+      #specifications {
+        .progress-bar-1 {
+          width: 87%;
+        }
+
+        .progress-bar-2 {
+          width: 94%;
+        }
+
+        .progress-bar-3 {
+          width: 96%;
+        }
+      }
+    }
+
+    .our-team-card-2 {
+      flex-direction: row-reverse;
+      margin: 0 30px 0 0;
+
+      .as-photo {
+        background: url("../img/team-member-2.jpg") no-repeat 46% 0;
+      }
+    }
+
+    .sansa-stark {
+      flex-direction: row;
+
+
+      #specifications {
+        .progress-bar-1 {
+          width: 92%;
+        }
+
+        .progress-bar-2 {
+          width: 91%;
+        }
+
+        .progress-bar-3 {
+          width: 89%;
+        }
+      }
+    }
+
+    .our-team-card-3 {
+      flex-direction: row;
+      margin: 0 0 0 30px;
+
+      .ss-photo {
+        background: url("../img/team-member-3.jpg") no-repeat 46% 0;
+      }
+    }
+
+    .khal-drogo {
+      flex-direction: row-reverse;
+
+      #specifications.kd {
+        .progress-bar-1 {
+          width: 75%;
+        }
+
+        .progress-bar-2 {
+          width: 92%;
+        }
+
+        .progress-bar-3 {
+          width: 84%;
+        }
+      }
+    }
+
+    .our-team-card-4 {
+      flex-direction: row-reverse;
+      margin: 0 30px 0 0;
+
+      .kd-photo {
+        background: url("../img/team-member-4.jpg") no-repeat 46% 0;
+      }
+    }
+
+    .daenerys-targaryen {
+      flex-direction: row;
+
+      #specifications {
+        .progress-bar-1 {
+          width: 99%;
+        }
+
+        .progress-bar-2 {
+          width: 99%;
+        }
+
+        .progress-bar-3 {
+          width: 99%;
+        }
+      }
+    }
+
+    .our-team-card-5 {
+      flex-direction: row;
+      margin: 0 0 0 30px;
+
+      .dt-photo {
+        background: url("../img/team-member-5.jpg") no-repeat 58% 0;
       }
     }
   }
