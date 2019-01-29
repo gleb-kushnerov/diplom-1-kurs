@@ -20,10 +20,13 @@
     opacity: 1;
     transform: scale(1); } }
 
+.container {
+  text-align: center; }
+
 .facts {
   box-sizing: border-box;
   padding: 0 15px var(--main-bottom-padding) 15px;
-  margin-top: -150px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
